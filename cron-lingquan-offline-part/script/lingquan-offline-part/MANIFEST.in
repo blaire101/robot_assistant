@@ -1,0 +1,3 @@
+include Makefile CHANGES LICENSE AUTHORS
+
+graft docs
