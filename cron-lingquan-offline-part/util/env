@@ -1,0 +1,42 @@
+#!/bin/sh
+cd `dirname $0`/..
+wk_dir=`pwd`
+script_dir=${wk_dir}/script
+cd ${script_dir}
+script_name=`basename $0`
+job_name="`basename $0 .sh`"
+script_path=${script_dir}/${script_name}
+bin_dir=${wk_dir}/bin
+conf_dir=${wk_dir}/conf
+util_dir=${wk_dir}/util
+jar_dir=${wk_dir}/jar
+flag_dir=${wk_dir}/flag
+alert_dir=${wk_dir}/alert
+log_dir=${wk_dir}/log
+ktrs_dir=${wk_dir}/ktrs
+
+d0=`date +'%Y-%m-%d'`
+d1=`date +'%Y-%m-%d' -d -1day`
+d7=`date +'%Y-%m-%d' -d -7day`
+d90=`date +'%Y-%m-%d' -d -90day`
+
+if [ $# -ge 1 ]; then
+  d1=`date +'%Y-%m-%d' -d $1`
+  d7=`date +'%Y-%m-%d' -d "$1 -6day"`
+  d90=`date +'%Y-%m-%d' -d "$1 -89day"`
+fi
+
+# config ############################
+source ${conf_dir}/default.conf
+source ${conf_dir}/vars.conf
+source ${conf_dir}/alert.conf
+
+# log dir ###########################
+source ${scheduler_log_script} ${log_dir}
+[ "$open_log" == "true" ] && exec &>$LOG_FILE
+log_uri="`hostname`:${LOG_FILE}"
+
+# utils #############################
+source ${util_dir}/static_hive_lib
+source ${util_dir}/static_functions
+source ${alert_dir}/alert

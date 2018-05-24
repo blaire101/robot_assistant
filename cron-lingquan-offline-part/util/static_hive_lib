@@ -1,0 +1,251 @@
+##################################################
+#@date:   20131011
+#@desc:   进行依赖关系检测
+##################################################
+#source global definition
+if [ -f /etc/bashrc ] 
+then
+    . /etc/bashrc
+fi
+#check partitions 
+#hive表是数据完整了才有目录
+function check_hive_partitions() {
+    #表名
+    local table_name=$1
+    #partitions
+    local partitions=$2
+    echo "[INFO] check_hive_partitions: ${table_name} ${partitions}"
+    local check_flag=`hive -e "show partitions ${table_name}" | grep ${partitions}` || true
+    if [ -z "${check_flag}" ]
+    then
+        echo "[INFO] check_hive_partitions:${table_name} partitions:${partitions} not exists"
+        return 255
+    else
+        echo "[INFO] check_hive_partitions:${table_name} partitions:${partitions} exists"
+        return 0
+    fi
+}
+#check hdfs dir
+function check_hdfs_dir() {
+    local hdfs_dir=$1
+    `hadoop fs -test -e ${hdfs_dir}` || local check_flag="not exists"
+    if [ -z "${check_flag}" ]
+    then
+        echo "[INFO] check_hdfs_dir:${hdfs_dir} exists"
+        return 0
+    else
+        echo "[INFO] check_hdfs_dir:${hdfs_dir} not exists"
+        return 255
+    fi
+}
+# check_hdfs_file
+function check_hdfs_file() {
+    local hdfs_file=$1
+    `hadoop fs -test -e ${hdfs_file}` || local check_flag="not exists"
+    if [ -z "${check_flag}" ]
+    then
+        echo "[INFO] check_hdfs_file:${hdfs_file} success"
+        return 0
+    else
+        echo "[INFO] check_hdfs_file:${hdfs_file} failure"
+        return 255
+    fi
+}
+
+#check local file
+function check_local_file() {
+    local local_file=$1
+    if [ -f ${local_file} ]
+    then
+        echo "[INFO] check_local_file:${local_file} exists"
+        return 0
+    else
+        echo "[INFO] check_local_file:${local_file} not exists"
+        return 255
+    fi
+}
+function check_local_crontab_label() {
+    local local_dir=$1
+    local label_date=$2
+    if [ -f ${local_dir}/"crontab_label."${label_date} ]
+    then
+        echo "[INFO] check_local_crontab_label:${local_dir}/crontab_label.${label_date} exists"
+        return 0
+    else
+        echo "[INFO] check_local_crontab_label:${local_dir}/crontab_label.${label_date} not exists"
+        return 255
+    fi
+}
+function touch_local_crontab_label() {
+    local local_dir=$1
+    local label_date=$2
+    if [ ! -d "${local_dir}" ]; then
+        mkdir -p ${local_dir}
+    fi
+    touch ${local_dir}/"crontab_label."${label_date}
+}
+function check_local_all_done() {
+    local local_dir=$1
+    local done_date=$2
+    if [ ! -d "${local_dir}" ]; then
+        mkdir -p ${local_dir}
+    fi
+    if [ -f ${local_dir}/"${done_date}".all.done ]
+    then
+        echo "[INFO] check_local_all_done:${local_dir}/${done_date}.all.done exists"
+        return 0
+    else
+        echo "[INFO] check_local_all_done:${local_dir}/${done_date}.all.done not exists"
+        return 255
+    fi
+}
+function touch_local_all_done() {
+    if [ ! -d "$1" ]; then
+      mkdir -p $1
+    fi
+    local local_dir=$1
+    local done_date=$2
+    echo "[INFO] touch_local_all_done:${local_dir}/${done_date}.all.done"
+    touch ${local_dir}/${done_date}.all.done 
+}
+function check_hdfs_count() {
+    local hdfs_dir=$1
+    local min_count=$2
+    local bcount=`hadoop fs -ls ${hdfs_dir} | awk 'BEGIN{sum=0;} {if(NF=8) {sum+=$5;}} END{print sum;}'`
+    if [ "${bcount}" -lt "${min_count}" ]
+    then
+        echo "[INFO] check_hdfs_count ${hdfs_dir}"
+        echo "bytes: ${bcount}"
+        echo "threshold: ${min_count}       failure"
+        return 255
+    else
+        echo "[INFO] check_hdfs_count ${hdfs_dir}"
+        echo "bytes: ${bcount}"
+        echo "threshold: ${min_count}       success"
+        return 0
+    fi  
+}
+###################################################
+# local          检测本地文件
+# hive           检测hive表
+# hdfs_dir       检测hdfs路径
+# hdfs_file      检测hdfs文件
+# count          检测hdfs分区大小
+###################################################
+
+function check_dependention() {
+    local dependention_file=$1
+
+    # 设置时间格式
+    if [ -z "${TIME_FORMATE}" ]
+    then 
+        TIME_FORMATE="%Y%m%d"
+    fi
+
+    # 判断是否有日期参数
+    if [ -z "${arg_date}" ]
+    then
+        local check_date=`date +"${TIME_FORMATE}" -d"1 days ago"`
+    else
+        local check_date="${arg_date}"
+    fi
+
+    cat ${dependention_file} | while read line
+    do
+        # 保存原始的分隔符
+        local OLD_IFS="${IFS}"
+        # 设置新的分隔符
+        IFS=" "
+
+        # split line to filename and filetype
+        local filename_filetype=($line)
+        # 恢复原有的分隔符
+        IFS="${OLD_IFS}"
+
+        # the array must be 2 items
+        if [ ${#filename_filetype[@]} -eq 2 ] 
+        then
+            if [ "${filename_filetype[1]}x" == "hivex" ] 
+            then
+                check_hive_partitions "${filename_filetype[0]}" "${check_date}" || return 255
+            elif [ "${filename_filetype[1]}x" == "hdfs_filex" ]
+            then
+                check_hdfs_file "${filename_filetype[0]}" || return 255
+            elif [ "${filename_filetype[1]}x" == "hdfs_dirx" ]
+	    then
+                check_hdfs_dir "${filename_filetype[0]}" || return 255
+            elif [ "${filename_filetype[1]}x" == "localx" ]
+            then
+                check_local_file "${filename_filetype[0]}" || return 255
+            elif [ "`expr ${filename_filetype[1]} + 0`" != "" ]
+            then
+                check_hdfs_count "${filename_filetype[0]}" "${filename_filetype[1]}" || return 255
+            else
+                echo "[ERROR] UNRECOGIZE filetype:${filename_filetype[1]}" 
+                return 255
+            fi
+        fi
+    done
+}
+# 删除一个hive表的分区
+function drop_table_partitions() {
+    local table_name=$1
+    local partitions_name=$2
+    local partitions_value=$3
+    hive -e "ALTER TABLE ${table_name} DROP IF EXISTS PARTITION (${partitions_name}='${partitions_value}')" || true
+}
+# 删除一个hdfs目录
+function drop_hdfs_dir() {
+    local hdfs_dir=$1
+    echo "[INFO] drop_hdfs_dir:${hdfs_dir}"
+    check_hdfs_dir $hdfs_dir && hadoop fs -rmr ${hdfs_dir} || true
+}
+# check deadline
+function check_deadtime() {
+    local dead_time=$1
+    local now_hour=`date +"%H"`
+    echo "[INFO] check deadtime"
+    echo "[INFO] now_hour:${now_hour} dead_time:${dead_time}"
+    if [[ ${dead_time} -le ${now_hour} ]]
+    then
+        return 255
+    else
+        return 0
+    fi
+}
+##################################################
+# @depricated
+##################################################
+# _SUCCESS
+function check_hdfs_success() {
+    local hdfs_dir=$1
+    check_hdfs_file "${hdfs_dir}/_SUCCESS" || local check_flag="not exists"
+    if [ -z "${check_flag}" ]
+    then
+        echo "[INFO] check_hdfs_success:${hdfs_dir} success" 
+        return 0
+    else
+        echo "[INFO] check_hdfs_success:${hdfs_dir} failure"
+        return 255
+    fi
+}
+#check hdfs label 
+function check_hdfs_label() {
+    local hdfs_dir=$1
+    local label_date=$2
+    check_hdfs_file "${hdfs_dir}/_success.${label_date}" || local check_flag="not exists"
+    if [ -z "${check_flag}" ]
+    then
+        echo "[INFO] check_hdfs_label:${hdfs_dir}/_success.${label_date} exists"
+        return 0
+    else
+        echo "[INFO] check_hdfs_label:${hdfs_dir}/_success.${label_date} not exists"
+        return 255
+    fi
+}
+# label the result;
+function touch_hdfs_label() {
+    local hdfs_dir=$1
+    local label_date=$2
+    hadoop fs -touchz ${hdfs_dir}/_success.${label_date}
+}

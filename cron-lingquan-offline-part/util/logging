@@ -1,0 +1,20 @@
+#!/bin/bash
+# usage: source logging.sh log_dir_name
+
+now=`date "+%Y%m%d_%H%M%S"`
+
+# like ${0} is ok?
+project=${0##*/}
+
+reserve_days=3
+if [ "x"$1 = "x" ];then
+  log_file=${project}_${now}_$RANDOM.log
+  LOG_FILE=${project}_${now}_$RANDOM.log
+  find ${project}_*.log -mtime +${reserve_days} -delete
+else
+  if [ ! -d "$1" ]; then
+    mkdir -p $1
+  fi
+  LOG_FILE=$1/${project}_${now}_$RANDOM.log
+  find $1/${project}_*.log -mtime +${reserve_days} -delete
+fi
