@@ -20,8 +20,8 @@ cd cron-lingquan-offline-part/script/lingquan-offline-part/docs
  
  2.0版本见 ： docs/lq2.0-design
  
- 索引结构 : docs/lq2.0-design/seek/
- 多店合一 : merge_some_shop
+  1. 索引结构 : docs/lq2.0-design/seek/
+  2. 多店合一 : merge_some_shop
  
 ## 人员
 
