@@ -1,29 +1,19 @@
 # 领券平台
 
-<<<<<<< HEAD
-## 项目主代码
-=======
-Date | 发起人 | Description | Version
-------- | ------- | ------- | -------
-2017-06-09 | 产品们 | 领券平台 | 1.0
-2017-06-14 |  | 明确拍定需求 |
-2017-06-15 | - | 技术方案讨论 | 
-2017-07-13 | -  | 首版发布  | -
-.. | .. | ..
+## 代码
 
-## 1. 需求
-
-## 2. 涉及表
-
-## 3. 使用技术
-
-## 4. 代码流程图
-
-## 5. 代码及部署位置
-
-## 6. Reference
->>>>>>> 6f1898a5598c71c5ca5df0cd4ed2c4d2e4f7c06e
-
-```
+```shell
 cd cron-lingquan-offline-part/script/lingquan-offline-part/
 ```
+
+## 文档
+
+```shell
+cd cron-lingquan-offline-part/script/lingquan-offline-part/docs
+```
+
+2.0版本见 ： lq2.0-design
+
+ 1. 商圈信息
+ 2. 更新频率
+ 3. 项目未来发展方向
