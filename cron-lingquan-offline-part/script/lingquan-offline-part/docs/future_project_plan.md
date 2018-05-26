@@ -2,7 +2,7 @@
 
 Date | Desc | Author
 ------- | ------- | -------
-2017-10-10 | 后续项目的思考 | Blair
+2017-10 | 后续项目的思考 | Blair
 
 ## 1. 领券平台 数据服务
 
@@ -45,7 +45,7 @@ Type | Desc | Skill | Implementation framework
 
 > 运用统计分析，数据挖掘和NLP相结合
 
-Attribute | Type | 初期想法
+Attribute | Type | 想法
 ------- | ------- | -------
 兴趣 interest | 美食 <br> 购物 <br> 丽人.. | 根据订单等信息 统计标签概率分布 与 ALS扩展标签来实现
 人群 crowd | 面食达人 <br> 日料达人.. | 根据 (订单、浏览记录 等行为) 制定 rule 实现, <br> 后不断收集准确信息并过滤(也可考虑结合其他 Attribute)，再用机器学习模型反作用于推大量用户
