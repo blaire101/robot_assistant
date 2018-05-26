@@ -33,7 +33,7 @@ Author | content
 
 ***
 
-## 后续规划
+## 规划
 
 Date | Desc | Author
 ------- | ------- | -------
@@ -48,7 +48,7 @@ Type | Skill
 3. 数据抓取爬虫 | Python、Pyspider、Elastic、...
 4. 数据抽取与录入 | Java、Spring、Python、Elastic、...
 
-## 2. 领券平台 机器人
+### 2. 机器人
 
 > 未来可类比 “盒马鲜生” 类似产品
 > 
@@ -61,9 +61,9 @@ Type | Desc
 3. 用户画像 | 见标题 4，结合用户画像，并可根据聊天内容收集特征用于 user profile 的维度
 4. 订单等业务信息查询 | ...
 
->  Python、NLP (Bayes、LDA、LR、HMM、Word2Vector...)
+>  Python、NLP (Bayes、LDA、LR、Word2Vector...)
 
-## 3. 推荐系统
+### 3. 推荐系统
 
 > 推荐系统分为 Offline-recommender 与 Online-recommender 两套推荐服务         
 >
@@ -76,7 +76,7 @@ Type | Desc | Skill | Implementation framework
 ------- | ------- | ------- | -------
 推荐系统 | 推荐 商户、卡券、活动 等信息 | 统计分析、机器学习、LR、CF、ALS、DL等 | Python、Spark、Hive、Hdfs、Elastic
 
-## 4. 用户画像
+### 4. 用户画像
 
 > 运用统计分析，数据挖掘和NLP相结合
 
