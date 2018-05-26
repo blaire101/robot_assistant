@@ -29,12 +29,10 @@ cd cron-lingquan-offline-part/script/lingquan-offline-part/docs
 
 Date | Desc | Author
 ------- | ------- | -------
-2017-10 | 后续项目的思考 | Blair
+2017-10 | 后续项目的规划 | Blair
 
-### 1. 领券平台 数据服务
+### 1. 数据服务
 
-Type | Skill
-------- | -------
 1. 数据接口服务 | Java dubbo、Spring、Restful、Elastic、...
 2. 数据智能计算 | Python、Elastic、Jieba、Shell...
 3. 数据抓取爬虫 | Python、Pyspider、Elastic、...
