@@ -20,8 +20,10 @@ coupon 是否支持多类别 | 不支持 | 支持 | 一张卡券可同属于 (�
 首页-附近的券，店数量，列表数据存在中间表
 杭州面积16596平方千米 ，1000个地标精确到500米
 
+```
 test_seek_third4_landmark_coupon_hangzhou
 test_seek_third4_landmark_shop_hangzhou
+```
 
 一个地标存6个距离段，每个距离段300条数据，=1800条数据
 
@@ -47,13 +49,6 @@ test_seek_third4_landmark_shop_hangzhou
 
 由于之前1条券属于不同的店会存多条记录，搜索时需要进行聚合操作，性能消耗比较大，
 优化方案后不会出现聚合操作，提高搜索性能
-
-
-距离过滤器优化：
-之前使用geoDistanceRangeFilter环形过滤器，优化后改为geoDistanceFilter圆形过滤器
-
-
-
 
 
 ## 人员分工
