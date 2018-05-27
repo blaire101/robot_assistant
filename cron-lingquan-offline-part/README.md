@@ -5,13 +5,13 @@
 ## 代码
 
 ```shell
-cd cron-lingquan-offline-part/script/lingquan-offline-part/
+cd script/lingquan-offline-part/
 ```
 
 ## 文档
 
 ```shell
-cd cron-lingquan-offline-part/script/lingquan-offline-part/docs
+cd script/lingquan-offline-part/docs
 ```
 
  1. 商圈信息
