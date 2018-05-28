@@ -1,7 +1,7 @@
-package com.sinaad.dmp_engine.redis.config;
+package com.saad.dmp_engine.redis.config;
 
 import com.google.common.collect.Lists;
-import com.sinaad.dmp_engine.redis.constant.FLAG;
+import com.saad.dmp_engine.redis.constant.FLAG;
 
 import java.util.Arrays;
 import java.util.List;

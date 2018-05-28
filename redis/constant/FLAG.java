@@ -1,4 +1,4 @@
-package com.sinaad.dmp_engine.redis.constant;
+package com.saad.dmp_engine.redis.constant;
 
 public interface FLAG {
 

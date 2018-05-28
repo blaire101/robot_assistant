@@ -1,4 +1,4 @@
-package com.sinaad.dmp_engine.redis.utils;
+package com.saad.dmp_engine.redis.utils;
 
 import redis.clients.jedis.ShardedJedis;
 import redis.clients.jedis.ShardedJedisPool;

@@ -1,4 +1,4 @@
-package com.sinaad.dmp_engine.redis.exceptions;
+package com.saad.dmp_engine.redis.exceptions;
 
 public class PoolJedisException extends Exception {
   public PoolJedisException() {

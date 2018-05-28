@@ -1,8 +1,8 @@
-package com.sinaad.dmp_engine.redis.config;
+package com.saad.dmp_engine.redis.config;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Maps;
-import com.sinaad.dmp_engine.redis.constant.FLAG;
+import com.saad.dmp_engine.redis.constant.FLAG;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.LineIterator;
 import org.apache.commons.lang.StringUtils;

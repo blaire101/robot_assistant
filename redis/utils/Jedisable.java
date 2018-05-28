@@ -1,8 +1,8 @@
-package com.sinaad.dmp_engine.redis.utils;
+package com.saad.dmp_engine.redis.utils;
 
-import com.sinaad.dmp_engine.redis.exceptions.PoolJedisException;
-import com.sinaad.dmp_engine.redis.exceptions.PrefixKeyException;
-import com.sinaad.dmp_engine.redis.exceptions.RegionException;
+import com.saad.dmp_engine.redis.exceptions.PoolJedisException;
+import com.saad.dmp_engine.redis.exceptions.PrefixKeyException;
+import com.saad.dmp_engine.redis.exceptions.RegionException;
 
 import java.util.Collection;
 import java.util.Map;
