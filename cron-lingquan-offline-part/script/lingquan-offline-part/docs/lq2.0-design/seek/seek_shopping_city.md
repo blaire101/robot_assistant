@@ -133,7 +133,7 @@ doc = {
          "shopping_name_show": "湖滨银泰c",
          "shopping_name": "湖滨银泰C",
          "shopping_headlines":"商场头条",
-         "shopping_surface_url": "http://www.baidu.com",
+         "shopping_surface_url": "http://www.qq.com",
          "shopping_url": "",
          "shopping_address":"下城区延安路",
          "shopping_position":[120.162458,30.253159],
@@ -143,7 +143,7 @@ doc = {
                "shop_id":"13",
                "shop_name": "新白鹿",
                "shop_url": "",
-               "shop_img_url": "http://www.sina.com",
+               "shop_img_url": "http://www.qq.com",
                "shop_is_recommend":1
                
              },
@@ -151,7 +151,7 @@ doc = {
                "shop_id":"14",
                "shop_name": "弄堂里",
                "shop_url": "http://www.qq.com/",
-               "shop_img_url": "http://www.sina.com",
+               "shop_img_url": "http://www.qq.com",
                "shop_is_recommend":0
              }              
           ],
