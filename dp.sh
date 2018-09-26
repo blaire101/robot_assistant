@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "start deploy..."
+git pull
 git status
 git add *
 git status
