@@ -42,7 +42,7 @@ def create_model(session, forward_only, beam_search, beam_size=5):
         FLAGS.size, FLAGS.num_layers, FLAGS.batch_size,
         FLAGS.learning_rate, forward_only=forward_only, beam_search=beam_search, beam_size=beam_size)
     ckpt = tf.train.latest_checkpoint(FLAGS.train_dir)
-    model_path = '~/ghome/github/blair101/seq2seq_chatbot/old_legacy_seq2seq/data/tmp\chat_bot.ckpt-0'
+    model_path = '/Users/blair/ghome/github/blair101/seq2seq_chatbot/old_legacy_seq2seq/data/tmp/chat_bot.ckpt-0'
     if forward_only:
         model.saver.restore(session, model_path)
     elif ckpt and tf.gfile.Exists(ckpt.model_checkpoint_path):
@@ -84,7 +84,7 @@ def decode():
         beam_size = FLAGS.beam_size
         beam_search = FLAGS.beam_search
 
-        print("beam_size : %d", beam_size)
+        print("beam_size : ", beam_size)
 
         model = create_model(sess, True, beam_search=beam_search, beam_size=beam_size)
         model.batch_size = 1
