@@ -4,6 +4,8 @@
 1. Tensorflow 1.4.0
 2. nltk >>> nltk.download('punkt')
 
+> nltk.tokenize.punkt 中包含了很多预先训练好的 tokenize模型
+
 ## 测试效果
 
 根据用户输入回复概率最大的前beam_size个句子：
