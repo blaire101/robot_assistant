@@ -1,7 +1,27 @@
 
 测试效果，根据用户输入回复概率最大的前beam_size个句子：
 
-![](https://i.imgur.com/EdsQ5FE.png)
+```py
+> hello
+Replies --------------------------------------->
+hello .
+hi .
+>  
+how are you
+Replies --------------------------------------->
+fine .
+>  
+How old are you
+Replies --------------------------------------->
+twenty-five dollars .
+merry christmas .
+>  
+who are you?
+Replies --------------------------------------->
+cenobites .
+i 'm sorry . .
+>  
+```
 
 #使用方法
 
