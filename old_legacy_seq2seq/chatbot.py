@@ -34,7 +34,8 @@ tf.app.flags.DEFINE_boolean("beam_search", True, "Set to True for beam_search.")
 tf.app.flags.DEFINE_boolean("decode", True, "Set to True for interactive decoding.")
 FLAGS = tf.app.flags.FLAGS
 
-def create_model(session, forward_only, beam_search, beam_size = 5):
+
+def create_model(session, forward_only, beam_search, beam_size=5):
     """Create translation model and initialize or load parameters in session."""
     model = Seq2SeqModel(
         FLAGS.en_vocab_size, FLAGS.en_vocab_size, [10, 10],
@@ -51,6 +52,7 @@ def create_model(session, forward_only, beam_search, beam_size = 5):
         print("Created model with fresh parameters.")
         session.run(tf.initialize_all_variables())
     return model
+
 
 def train():
     # prepare dataset
@@ -73,6 +75,7 @@ def train():
                     checkpoint_path = os.path.join(FLAGS.train_dir, "chat_bot.ckpt")
                     model.saver.save(sess, checkpoint_path, global_step=model.global_step)
 
+
 def decode():
     with tf.Session() as sess:
         beam_size = FLAGS.beam_size
@@ -93,7 +96,7 @@ def decode():
                 paths = [[] for _ in range(beam_size)]
                 curr = [i for i in range(beam_size)]
                 num_steps = len(beam_path)
-                for i in range(num_steps-1, -1, -1):
+                for i in range(num_steps - 1, -1, -1):
                     for kk in range(beam_size):
                         paths[kk].append(beam_symbol[i][curr[kk]])
                         curr[kk] = beam_path[i][curr[kk]]
@@ -110,42 +113,44 @@ def decode():
                 print("> ", "")
                 sys.stdout.flush()
                 sentence = sys.stdin.readline()
-        # else:
-        #     sys.stdout.write("> ")
-        #     sys.stdout.flush()
-        #     sentence = sys.stdin.readline()
-        #
-        #     while sentence:
-        #           # Get token-ids for the input sentence.
-        #           token_ids = sentence_to_token_ids(tf.compat.as_bytes(sentence), vocab)
-        #           # Which bucket does it belong to?
-        #           bucket_id = min([b for b in xrange(len(_buckets))
-        #                            if _buckets[b][0] > len(token_ids)])
-        #           # for loc in locs:
-        #               # Get a 1-element batch to feed the sentence to the model.
-        #           encoder_inputs, decoder_inputs, target_weights = model.get_batch(
-        #                   {bucket_id: [(token_ids, [],)]}, bucket_id)
-        #
-        #           _, _, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
-        #                                                target_weights, bucket_id, True,beam_search)
-        #           # This is a greedy decoder - outputs are just argmaxes of output_logits.
-        #
-        #           outputs = [int(np.argmax(logit, axis=1)) for logit in output_logits]
-        #           # If there is an EOS symbol in outputs, cut them at that point.
-        #           if EOS_ID in outputs:
-        #               # print outputs
-        #               outputs = outputs[:outputs.index(EOS_ID)]
-        #
-        #           print(" ".join([tf.compat.as_str(rev_vocab[output]) for output in outputs]))
-        #           print("> ", "")
-        #           sys.stdout.flush()
-        #           sentence = sys.stdin.readline()
+                # else:
+                #     sys.stdout.write("> ")
+                #     sys.stdout.flush()
+                #     sentence = sys.stdin.readline()
+                #
+                #     while sentence:
+                #           # Get token-ids for the input sentence.
+                #           token_ids = sentence_to_token_ids(tf.compat.as_bytes(sentence), vocab)
+                #           # Which bucket does it belong to?
+                #           bucket_id = min([b for b in xrange(len(_buckets))
+                #                            if _buckets[b][0] > len(token_ids)])
+                #           # for loc in locs:
+                #               # Get a 1-element batch to feed the sentence to the model.
+                #           encoder_inputs, decoder_inputs, target_weights = model.get_batch(
+                #                   {bucket_id: [(token_ids, [],)]}, bucket_id)
+                #
+                #           _, _, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
+                #                                                target_weights, bucket_id, True,beam_search)
+                #           # This is a greedy decoder - outputs are just argmaxes of output_logits.
+                #
+                #           outputs = [int(np.argmax(logit, axis=1)) for logit in output_logits]
+                #           # If there is an EOS symbol in outputs, cut them at that point.
+                #           if EOS_ID in outputs:
+                #               # print outputs
+                #               outputs = outputs[:outputs.index(EOS_ID)]
+                #
+                #           print(" ".join([tf.compat.as_str(rev_vocab[output]) for output in outputs]))
+                #           print("> ", "")
+                #           sys.stdout.flush()
+                #           sentence = sys.stdin.readline()
+
 
 def main(_):
-  if FLAGS.decode:
-    decode()
-  else:
-    train()
+    if FLAGS.decode:
+        decode()
+    else:
+        train()
+
 
 if __name__ == "__main__":
-  tf.app.run()
+    tf.app.run()
