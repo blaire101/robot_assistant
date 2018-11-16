@@ -80,8 +80,12 @@ def train():
 
 def decode():
     with tf.Session() as sess:
+
         beam_size = FLAGS.beam_size
         beam_search = FLAGS.beam_search
+
+        print("beam_size : %d", beam_size)
+
         model = create_model(sess, True, beam_search=beam_search, beam_size=beam_size)
         model.batch_size = 1
         data_path = '/Users/blair/ghome/github/blair101/seq2seq_chatbot/old_legacy_seq2seq/data/dataset-cornell-length10-filter1-vocabSize40000.pkl'
@@ -149,8 +153,10 @@ def decode():
 
 def main(_):
     if FLAGS.decode:
+        print("run decode...")
         decode()
     else:
+        print("run train...")
         train()
 
 
