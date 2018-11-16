@@ -42,7 +42,7 @@ def create_model(session, forward_only, beam_search, beam_size=5):
         FLAGS.size, FLAGS.num_layers, FLAGS.batch_size,
         FLAGS.learning_rate, forward_only=forward_only, beam_search=beam_search, beam_size=beam_size)
     ckpt = tf.train.latest_checkpoint(FLAGS.train_dir)
-    model_path = 'E:\PycharmProjects\Seq-to-Seq\seq2seq_chatbot\\tmp\chat_bot.ckpt-0'
+    model_path = '~/ghome/github/blair101/seq2seq_chatbot/old_legacy_seq2seq/data/tmp\chat_bot.ckpt-0'
     if forward_only:
         model.saver.restore(session, model_path)
     elif ckpt and tf.gfile.Exists(ckpt.model_checkpoint_path):
@@ -56,8 +56,10 @@ def create_model(session, forward_only, beam_search, beam_size=5):
 
 def train():
     # prepare dataset
-    data_path = 'E:\PycharmProjects\Seq-to-Seq\seq2seq_chatbot\data\dataset-cornell-length10-filter1-vocabSize40000.pkl'
+    data_path = '/Users/blair/ghome/github/blair101/seq2seq_chatbot/old_legacy_seq2seq/data/dataset-cornell-length10-filter1-vocabSize40000.pkl'
+
     word2id, id2word, trainingSamples = loadDataset(data_path)
+
     with tf.Session() as sess:
         print("Creating %d layers of %d units." % (FLAGS.num_layers, FLAGS.size))
         model = create_model(sess, False, beam_search=False, beam_size=5)
@@ -82,7 +84,7 @@ def decode():
         beam_search = FLAGS.beam_search
         model = create_model(sess, True, beam_search=beam_search, beam_size=beam_size)
         model.batch_size = 1
-        data_path = 'E:\PycharmProjects\Seq-to-Seq\seq2seq_chatbot\data\dataset-cornell-length10-filter1-vocabSize40000.pkl'
+        data_path = '/Users/blair/ghome/github/blair101/seq2seq_chatbot/old_legacy_seq2seq/data/dataset-cornell-length10-filter1-vocabSize40000.pkl'
         word2id, id2word, trainingSamples = loadDataset(data_path)
 
         if beam_search:

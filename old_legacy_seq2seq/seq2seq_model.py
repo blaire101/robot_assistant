@@ -1,5 +1,6 @@
 import tensorflow as tf
 from seq2seq import embedding_attention_seq2seq
+
 class Seq2SeqModel():
 
     def __init__(self, source_vocab_size, target_vocab_size, en_de_seq_len, hidden_size, num_layers,
