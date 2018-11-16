@@ -1,5 +1,12 @@
 
-测试效果，根据用户输入回复概率最大的前beam_size个句子：
+## environment
+
+1. Tensorflow 1.4.0
+2. nltk >>> nltk.download('punkt')
+
+## 测试效果
+
+根据用户输入回复概率最大的前beam_size个句子：
 
 ```bash
 > hello
