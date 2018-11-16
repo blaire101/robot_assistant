@@ -36,11 +36,13 @@ FLAGS = tf.app.flags.FLAGS
 
 
 def create_model(session, forward_only, beam_search, beam_size=5):
+
     """Create translation model and initialize or load parameters in session."""
     model = Seq2SeqModel(
         FLAGS.en_vocab_size, FLAGS.en_vocab_size, [10, 10],
         FLAGS.size, FLAGS.num_layers, FLAGS.batch_size,
         FLAGS.learning_rate, forward_only=forward_only, beam_search=beam_search, beam_size=beam_size)
+
     ckpt = tf.train.latest_checkpoint(FLAGS.train_dir)
     model_path = '/Users/blair/ghome/github/blair101/seq2seq_chatbot/old_legacy_seq2seq/data/tmp/chat_bot.ckpt-0'
     if forward_only:
