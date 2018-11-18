@@ -16,11 +16,11 @@
 
 - [Chatbot Research 6 - 更多论文 (感谢 PaperWeekly)][bot6]
 
-- [Chatbot Research 7 - 旧版 tf.contrib.legacy_seq2seq API 介绍][0]
+- [Chatbot Research 8 - 理论 seq2seq+Attention 机制模型详解][bot8]
 
-- [Chatbot Research 8 - 简单chatbot代码实现][0]
+- [Chatbot Research 9 - 旧版 tf.contrib.legacy_seq2seq API 介绍][0]
 
-- [Chatbot Research 9 - Dialog_Corpus 中文语料库][bot9]
+- [Chatbot Research 10 - Dialog_Corpus 中文语料库][bot10]
 
 - [Chatbot Research x - Some Useful Links][bot5_1]
 
@@ -30,7 +30,8 @@
 [bot4]: http://www.iequa.com/2019/08/14/chatbot-research4/
 [bot5]: http://www.iequa.com/2019/08/15/chatbot-research5/
 [bot6]: http://www.iequa.com/2019/08/16/chatbot-research6/
-[bot9]: http://www.iequa.com/2019/08/19/chatbot-research9/
+[bot8]: http://www.iequa.com/3017/11/17/chatbot-research8/
+[bot10]: http://www.iequa.com/2019/08/19/chatbot-research9/
 
 [bot5_1]: http://www.iequa.com/2019/08/15/chatbot-research5_1/
 
