@@ -31,7 +31,7 @@
 [bot5]: http://www.iequa.com/2019/08/15/chatbot-research5/
 [bot6]: http://www.iequa.com/2019/08/16/chatbot-research6/
 [bot8]: http://www.iequa.com/3017/11/17/chatbot-research8/
-[bot10]: http://www.iequa.com/2019/08/19/chatbot-research9/
+[bot10]: http://www.iequa.com/2019/08/20/chatbot-research10/
 
 [bot5_1]: http://www.iequa.com/2019/08/15/chatbot-research5_1/
 
