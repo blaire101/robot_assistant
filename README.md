@@ -12,7 +12,7 @@
 
 - [Chatbot Research 4 - 深度学习知识回顾][bot4]
 
-- [Chatbot Research x - 一些有用的链接][bot5_1]
+- [Chatbot Research x - Some Useful Links][bot5_1]
 
 - [Chatbot Research 5 - 基于深度学习的检索聊天机器人][bot5]
 
