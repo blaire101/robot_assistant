@@ -12,8 +12,6 @@
 
 - [Chatbot Research 4 - 深度学习知识回顾][bot4]
 
-- [Chatbot Research x - Some Useful Links][bot5_1]
-
 - [Chatbot Research 5 - 基于深度学习的检索聊天机器人][bot5]
 
 - [Chatbot Research 6 - 更多论文 (感谢 PaperWeekly)][bot6]
@@ -23,6 +21,8 @@
 - [Chatbot Research 8 - 简单chatbot代码实现][0]
 
 - [Chatbot Research 9 - Dialog_Corpus 中文语料库][bot9]
+
+- [Chatbot Research x - Some Useful Links][bot5_1]
 
 [bot1]: http://www.iequa.com/2019/08/11/chatbot-research1/
 [bot2]: http://www.iequa.com/2019/08/12/chatbot-research2/
