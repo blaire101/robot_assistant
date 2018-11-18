@@ -30,15 +30,19 @@ def loadDataset(filename):
 
     dataset_path = os.path.join(filename)
     print('Loading dataset from {}'.format(dataset_path))
+
     with open(dataset_path, 'rb') as handle:
 
         data = pickle.load(handle)  # Warning: If adding something here, also modifying saveDataset
+
         word2id = data['word2id']
         id2word = data['id2word']
         trainingSamples = data['trainingSamples']
+
         f.write(str(len(trainingSamples)))
 
     f.close()
+
     return word2id, id2word, trainingSamples
 
 def createBatch(samples, en_de_seq_len):

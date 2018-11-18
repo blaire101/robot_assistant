@@ -16,7 +16,10 @@ import math
 import sys
 import time
 from data_utils import *
+
+'''Seq2SeqModel'''
 from seq2seq_model import *
+
 from tqdm import tqdm
 
 tf.app.flags.DEFINE_float("learning_rate", 0.001, "Learning rate.")
@@ -36,7 +39,6 @@ FLAGS = tf.app.flags.FLAGS
 
 
 def create_model(session, forward_only, beam_search, beam_size=5):
-
     """Create translation model and initialize or load parameters in session."""
     model = Seq2SeqModel(
         FLAGS.en_vocab_size, FLAGS.en_vocab_size, [10, 10],
@@ -45,6 +47,7 @@ def create_model(session, forward_only, beam_search, beam_size=5):
 
     ckpt = tf.train.latest_checkpoint(FLAGS.train_dir)
     model_path = '/Users/blair/ghome/github/blair101/seq2seq_chatbot/old_legacy_seq2seq/data/tmp/chat_bot.ckpt-0'
+
     if forward_only:
         model.saver.restore(session, model_path)
     elif ckpt and tf.gfile.Exists(ckpt.model_checkpoint_path):
@@ -63,9 +66,14 @@ def train():
     word2id, id2word, trainingSamples = loadDataset(data_path)
 
     with tf.Session() as sess:
+
+        '''3 num_layers, 512 units / each cell'''
         print("Creating %d layers of %d units." % (FLAGS.num_layers, FLAGS.size))
+
         model = create_model(sess, False, beam_search=False, beam_size=5)
+
         current_step = 0
+
         for e in range(FLAGS.numEpochs):
             print("----- Epoch {}/{} -----".format(e + 1, FLAGS.numEpochs))
             batches = getBatches(trainingSamples, FLAGS.batch_size, model.en_de_seq_len)
