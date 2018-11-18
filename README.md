@@ -24,8 +24,6 @@
 
 - [Chatbot Research x - Some Useful Links][bot5_1]
 
-- [My Github Chatbot-tube](https://github.com/chatbot-tube)
-
 [bot1]: http://www.iequa.com/2019/08/11/chatbot-research1/
 [bot2]: http://www.iequa.com/2019/08/12/chatbot-research2/
 [bot3]: http://www.iequa.com/2019/08/13/chatbot-research3/
@@ -36,6 +34,9 @@
 
 [bot5_1]: http://www.iequa.com/2019/08/15/chatbot-research5_1/
 
+### Github Resource
+
+- [Chatbot-tube](https://github.com/chatbot-tube)
 
 ### 预备知识
 
