@@ -24,15 +24,15 @@
 
 - [Chatbot Research 9 - Dialog_Corpus 中文语料库][bot9]
 
-[bot1]: www.iequa.com/2019/08/11/chatbot-research1/
-[bot2]: www.iequa.com/2019/08/12/chatbot-research2/
-[bot3]: www.iequa.com/2019/08/13/chatbot-research3/
-[bot4]: www.iequa.com/2019/08/14/chatbot-research4/
-[bot5]: www.iequa.com/2019/08/15/chatbot-research5/
-[bot6]: www.iequa.com/2019/08/16/chatbot-research6/
-[bot9]: www.iequa.com/2019/08/19/chatbot-research9/
+[bot1]: http://www.iequa.com/2019/08/11/chatbot-research1/
+[bot2]: http://www.iequa.com/2019/08/12/chatbot-research2/
+[bot3]: http://www.iequa.com/2019/08/13/chatbot-research3/
+[bot4]: http://www.iequa.com/2019/08/14/chatbot-research4/
+[bot5]: http://www.iequa.com/2019/08/15/chatbot-research5/
+[bot6]: http://www.iequa.com/2019/08/16/chatbot-research6/
+[bot9]: http://www.iequa.com/2019/08/19/chatbot-research9/
 
-[bot5_1]: www.iequa.com/2019/08/15/chatbot-research5_1/
+[bot5_1]: http://www.iequa.com/2019/08/15/chatbot-research5_1/
 
 
 ### 预备知识
