@@ -1,25 +1,28 @@
 # seq2seq_chatbot
 
+## 预备知识
 
-## 1. 词嵌入（word2vec）
+- [1.1 词嵌入（word2vec）][0]
 
-## 2. 近似训练
+- [1.2 近似训练][0]
 
-## 3. Word2vec 的实现
+- [1.3 Word2vec 的实现][0]
 
-## 4. 子词嵌入（fastText）
+- [1.4 子词嵌入（fastText）][0]
 
-## 5. 全局向量的词嵌入（GloVe）
+- [1.5 全局向量的词嵌入（GloVe）][0]
 
-## 6. 求近义词和类比词
+- [1.6 求近义词和类比词][0]
 
-## 7. 文本情感分类：使用 RNN
+- [1.7 文本情感分类：使用 RNN][0]
 
-## 8. 文本情感分类：使用 CNN（textCNN）
+- [1.8 文本情感分类：使用 CNN（textCNN）][0]
 
-## 9. 编码器—解码器（seq2seq）
+- [1.9 编码器—解码器（seq2seq）][0]
 
-## 10. 束搜索 beam-search
+- [1.10 束搜索 beam-search][0]
 
-## 11. Attention机制
+- [1.11 Attention机制][0]
 
+
+[0]: https://github.com/blair101/seq2seq_chatbot/
