@@ -34,7 +34,7 @@
 
 [bot5_1]: http://www.iequa.com/2019/08/15/chatbot-research5_1/
 
-### Github Resource
+### Github
 
 - [Chatbot-tube](https://github.com/chatbot-tube)
 
