@@ -1,6 +1,6 @@
 # seq2seq_chatbot
 
-聊天机器人（chatbot），也被称为会话代理或对话系统，现已成为了一个热门话题。微软在聊天机器人上押上了重注，Facebook（M）、苹果（Siri）、谷歌 和 Slack 等公司也是如此。 新一波创业者们正在尝试改变消费者与服务的交互方式。
+聊天机器人（chatbot），也被称为会话代理或对话系统，现已成为了一个热门话题。 Microsoft在聊天机器人上押上了重注，Facebook（M）、Apple（Siri）、Google（Assistant） 等公司也是如此。 新一波创业者们正在尝试改变消费者与服务的交互方式。
 
 ### Chatbot Research
 
