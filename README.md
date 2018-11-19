@@ -20,7 +20,7 @@
 
 - [Chatbot Research 9 - 旧版 tf.contrib.legacy_seq2seq API 介绍][0]
 
-- [Chatbot Research 10 - Dialog_Corpus 中文语料库][bot10]
+- [Chatbot Research 10 - Dialog_Corpus 常用数据集][bot10]
 
 - [Chatbot Research x - Some Useful Links][bot5_1]
 
