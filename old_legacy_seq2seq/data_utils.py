@@ -61,19 +61,30 @@ def createBatch(samples, en_de_seq_len):
         batch.encoderSeqs.append(list(reversed(sample[0])))  # 将输入反序，可提高模型效果
         batch.decoderSeqs.append([goToken] + sample[1] + [eosToken])  # Add the <go> and <eos> tokens
         batch.targetSeqs.append(batch.decoderSeqs[-1][1:])  # Same as decoder, but shifted to the left (ignore the <go>)
+
         # 将每个元素PAD到指定长度，并构造weights序列长度mask标志
+        '''
+        encoderSeqs 的每个元素 ：  padding 在前面补充 + 反序的 Query
+        
+        decoderSeqs 的每个元素 ：  <go> + Answer + <eos> + padding
+        
+        targetSeqs  的每个元素 ：  是 不包含 <go> 的 Response + padding
+        
+        weights     的每个元素 ：  当前 Response 的有效字符个数 + padding 的字符个数 [1, 1, 1, 1, 0, 0, 0, ..., 0] 比如 "How are you ?" 就是 4 个 1， 有效字符是4个
+        '''
         batch.encoderSeqs[i] = [padToken] * (en_de_seq_len[0] - len(batch.encoderSeqs[i])) + batch.encoderSeqs[i]
         batch.weights.append([1.0] * len(batch.targetSeqs[i]) + [0.0] * (en_de_seq_len[1] - len(batch.targetSeqs[i])))
         batch.decoderSeqs[i] = batch.decoderSeqs[i] + [padToken] * (en_de_seq_len[1] - len(batch.decoderSeqs[i]))
         batch.targetSeqs[i] = batch.targetSeqs[i] + [padToken] * (en_de_seq_len[1] - len(batch.targetSeqs[i]))
 
     #--------------------接下来就是将数据进行reshape操作，变成序列长度*batch_size格式的数据------------------------
-    encoderSeqsT = []  # Corrected orientation
-    for i in range(en_de_seq_len[0]):
+    encoderSeqsT = []  # Corrected orientation， 变为 [[512个单字], [512个单字], ..., [512个单字]] 一共20个。 也就是20行，512列
+    for i in range(en_de_seq_len[0]):#20
         encoderSeqT = []
-        for j in range(batchSize):
-            encoderSeqT.append(batch.encoderSeqs[j][i])
+        for j in range(batchSize):#512
+            encoderSeqT.append(batch.encoderSeqs[j][i])#一列
         encoderSeqsT.append(encoderSeqT)
+
     batch.encoderSeqs = encoderSeqsT
 
     decoderSeqsT = []
