@@ -24,16 +24,16 @@
 
 - [Chatbot Research x - Some Useful Links][bot5_1]
 
-[bot1]: http://www.iequa.com/2019/08/11/chatbot-research1/
-[bot2]: http://www.iequa.com/2019/08/12/chatbot-research2/
-[bot3]: http://www.iequa.com/2019/08/13/chatbot-research3/
-[bot4]: http://www.iequa.com/2019/08/14/chatbot-research4/
-[bot5]: http://www.iequa.com/2019/08/15/chatbot-research5/
-[bot6]: http://www.iequa.com/2019/08/16/chatbot-research6/
-[bot8]: http://www.iequa.com/3017/11/17/chatbot-research8/
-[bot10]: http://www.iequa.com/3017/08/20/chatbot-research10/
+[bot1]: http://www.iequa.com/2019/08/11/chatbot/chatbot-research1/
+[bot2]: http://www.iequa.com/2019/08/12/chatbot/chatbot-research2/
+[bot3]: http://www.iequa.com/2019/08/13/chatbot/chatbot-research3/
+[bot4]: http://www.iequa.com/2019/08/14/chatbot/chatbot-research4/
+[bot5]: http://www.iequa.com/2019/08/15/chatbot/chatbot-research5/
+[bot6]: http://www.iequa.com/2019/08/16/chatbot/chatbot-research6/
+[bot8]: http://www.iequa.com/3017/11/17/chatbot/chatbot-research8/
+[bot10]: http://www.iequa.com/3017/08/20/chatbot/chatbot-research10/
 
-[bot5_1]: http://www.iequa.com/2019/08/15/chatbot-research5_1/
+[bot5_1]: http://www.iequa.com/2019/08/15/chatbot/chatbot-research5_1/
 
 ### Github
 
