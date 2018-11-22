@@ -98,7 +98,7 @@ class Seq2SeqModel():
         self.saver = tf.train.Saver(tf.all_variables())
 
     def step(self, session, encoder_inputs, decoder_inputs, decoder_targets, target_weights, go_token_id):
-        #传入一个batch的数据，并训练性对应的模型
+        # 传入一个batch的数据，并训练性对应的模型
         # 构建sess.run时的feed_inpits
         feed_dict = {}
         if not self.forward_only:

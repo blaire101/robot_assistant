@@ -37,7 +37,7 @@ tf.app.flags.DEFINE_boolean("beam_search", True, "Set to True for beam_search.")
 tf.app.flags.DEFINE_boolean("decode", True, "Set to True for interactive decoding.")
 FLAGS = tf.app.flags.FLAGS
 
-
+'''forward_only is false when is training.'''
 def create_model(session, forward_only, beam_search, beam_size=5):
     """Create translation model and initialize or load parameters in session."""
     model = Seq2SeqModel(
@@ -112,7 +112,8 @@ def decode():
                 paths = [[] for _ in range(beam_size)]
                 curr = [i for i in range(beam_size)]
                 num_steps = len(beam_path)
-                for i in range(num_steps - 1, -1, -1):
+
+                for i in range(num_steps -1, -1, -1):
                     for kk in range(beam_size):
                         paths[kk].append(beam_symbol[i][curr[kk]])
                         curr[kk] = beam_path[i][curr[kk]]
