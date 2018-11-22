@@ -53,3 +53,11 @@ joad .
 >
 > 在 chatbot.py 文件的三处。好了，接下来就可以愉快的运行了
 
+## reference
+
+- [tensorflow 笔记7：tf.concat 和 ops中的array_ops.concat][1]
+- [Tensorflow 中文社区][2]
+
+[1]: https://www.cnblogs.com/lovychen/p/9367099.html
+[2]: http://www.tensorfly.cn/tfdoc/api_docs/python/array_ops.html
+[3]: https://blog.csdn.net/wuzqChom/article/details/77073246
