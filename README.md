@@ -20,17 +20,17 @@
 
 - [Chatbot Research 8 - 理论 seq2seq+Attention 机制模型详解][b8]
 
-- [Chatbot Research 9 - Chatbot 的第一个版本 (简单实现)][b9]
+- [Chatbot Research 9 - chatbot 的第一个版本 (简单实现)][b9]
 
 - [Chatbot Research 10 - Dialog_Corpus 中文语料库][b10]
 
-- [Chatbot Research 11 - Chatbot 的第二个版本 (新版实现)][0]
+- [Chatbot Research 11 - chatbot 的第二个版本 (新版实现)][0]
 
-- [Chatbot Research 12 - Chatbot 的评价指标][0]
+- [Chatbot Research 12 - chatbot 的评价指标][0]
 
-- [Chatbot Research 13 - Chatbot MMI 模型理论][0]
+- [Chatbot Research 13 - chatbot MMI 模型理论][0]
 
-- [Chatbot Research 14 - Chatbot DST 多轮对话理论][0]
+- [Chatbot Research 14 - chatbot DST 多轮对话理论][0]
 
 - [Chatbot Research x - Some Useful Links][bot5_1]
 
