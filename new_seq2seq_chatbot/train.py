@@ -17,21 +17,26 @@ tf.app.flags.DEFINE_string('model_dir', 'model/', 'Path to save model checkpoint
 tf.app.flags.DEFINE_string('model_name', 'chatbot.ckpt', 'File name used for model checkpoints')
 FLAGS = tf.app.flags.FLAGS
 
-data_path = 'E:\PycharmProjects\seq2seq_chatbot\seq2seq_chatbot_new\data\dataset-cornell-length10-filter1-vocabSize40000.pkl'
+data_path = '/Users/blair/ghome/github/blair101/seq2seq_chatbot/new_seq2seq_chatbot/data/dataset-cornell-length10-filter1-vocabSize40000.pkl'
 word2id, id2word, trainingSamples = loadDataset(data_path)
 
 with tf.Session() as sess:
+
     model = Seq2SeqModel(FLAGS.rnn_size, FLAGS.num_layers, FLAGS.embedding_size, FLAGS.learning_rate, word2id,
                          mode='train', use_attention=True, beam_search=False, beam_size=5, max_gradient_norm=5.0)
+
     ckpt = tf.train.get_checkpoint_state(FLAGS.model_dir)
+
     if ckpt and tf.train.checkpoint_exists(ckpt.model_checkpoint_path):
         print('Reloading model parameters..')
         model.restore(sess, ckpt.model_checkpoint_path)
     else:
         print('Created new model parameters..')
         sess.run(tf.global_variables_initializer())
+
     current_step = 0
     summary_writer = tf.summary.FileWriter(FLAGS.model_dir, graph=sess.graph)
+
     for e in range(FLAGS.numEpochs):
         print("----- Epoch {}/{} -----".format(e + 1, FLAGS.numEpochs))
         batches = getBatches(trainingSamples, FLAGS.batch_size)

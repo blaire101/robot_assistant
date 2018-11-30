@@ -66,7 +66,7 @@ def createBatch(samples, en_de_seq_len):
         '''
         encoderSeqs 的每个元素 ：  padding 在前面补充 + 反序的 Query
         
-        decoderSeqs 的每个元素 ：  <go> + Answer + <eos> + padding
+        decoderSeqs 的每个元素 ：  <go> + Response + <eos> + padding
         
         targetSeqs  的每个元素 ：  是 不包含 <go> 的 Response + padding
         
