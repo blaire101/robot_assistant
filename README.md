@@ -24,7 +24,7 @@
 
 - [Chatbot Research 10 - Dialog_Corpus 中文语料库][b10]
 
-- [Chatbot Research 11 - chatbot 的第二个版本 (新版实现)][0]
+- [Chatbot Research 11 - chatbot 的第二个版本 (新版实现)][b11]
 
 - [Chatbot Research 12 - chatbot 的评价指标][0]
 
@@ -32,21 +32,18 @@
 
 - [Chatbot Research 14 - chatbot DST 多轮对话理论][0]
 
-- [Chatbot Research x - Some Useful Links][bot5_1]
-
 [0]: /chatbot
-[b1]: http://www.iequa.com/2019/08/11/chatbot/chatbot-research1/
-[b2]: http://www.iequa.com/2019/08/12/chatbot/chatbot-research2/
-[b3]: http://www.iequa.com/2019/08/13/chatbot/chatbot-research3/
-[b4]: http://www.iequa.com/2019/08/14/chatbot/chatbot-research4/
-[b5]: http://www.iequa.com/2019/08/15/chatbot/chatbot-research5/
-[b6]: http://www.iequa.com/2019/08/16/chatbot/chatbot-research6/
-[b7]: http://www.iequa.com/2019/08/17/chatbot/chatbot-research7/
-[b8]: http://www.iequa.com/3017/11/17/chatbot/chatbot-research8/
-[b9]:http://www.iequa.com/3017/11/26/chatbot/chatbot-research9/
-[b10]: http://www.iequa.com/2019/08/20/chatbot/chatbot-research10/
-
-[bot5_1]: http://www.iequa.com/2019/08/15/chatbot/chatbot-research5_1/
+[b1]: /2017/08/11/chatbot/chatbot-research1/
+[b2]: /2017/08/12/chatbot/chatbot-research2/
+[b3]: /2017/08/13/chatbot/chatbot-research3/
+[b4]: /2017/08/14/chatbot/chatbot-research4/
+[b5]: /2017/08/15/chatbot/chatbot-research5/
+[b6]: /2017/08/16/chatbot/chatbot-research6/
+[b7]: /2018/09/26/chatbot/chatbot-research7/
+[b8]: /2018/11/17/chatbot/chatbot-research8/
+[b9]:/2018/11/19/chatbot/chatbot-research9/
+[b10]: /2018/11/26/chatbot/chatbot-research10/
+[b11]: /2018/11/29/chatbot/chatbot-research11/
 
 ### Github
 
