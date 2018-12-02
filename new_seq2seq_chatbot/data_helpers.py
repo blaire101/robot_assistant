@@ -21,19 +21,32 @@ class Batch:
 
 
 def loadDataset(filename):
+
+    k = 1
+
     '''
     读取样本数据
-    :param filename: 文件路径，是一个字典，包含word2id、id2word分别是单词与索引对应的字典和反序字典，
-                    trainingSamples样本数据，每一条都是QA对
+    :param filename: 文件路径，是一个字典，包含 word2id、id2word 分别是单词与索引对应的字典和反序字典，
+                    trainingSamples 样本数据，每一条都是 QA 对
     :return: word2id, id2word, trainingSamples
     '''
+
     dataset_path = os.path.join(filename)
+
     print('Loading dataset from {}'.format(dataset_path))
+
     with open(dataset_path, 'rb') as handle:
         data = pickle.load(handle)  # Warning: If adding something here, also modifying saveDataset
-        word2id = data['word2id']
-        id2word = data['id2word']
+        word2id = data['word2id']   # This is a dict
+        id2word = data['id2word']   # This is a dict
         trainingSamples = data['trainingSamples']
+        # print(word2id)
+        print(id2word)
+        # print(trainingSamples)
+
+        if k == 1:
+            return
+
     return word2id, id2word, trainingSamples
 
 

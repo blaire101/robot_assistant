@@ -15,10 +15,23 @@ tf.app.flags.DEFINE_integer('numEpochs', 30, 'Maximum # of training epochs')
 tf.app.flags.DEFINE_integer('steps_per_checkpoint', 100, 'Save model checkpoint every this iteration')
 tf.app.flags.DEFINE_string('model_dir', 'model/', 'Path to save model checkpoints')
 tf.app.flags.DEFINE_string('model_name', 'chatbot.ckpt', 'File name used for model checkpoints')
+
 FLAGS = tf.app.flags.FLAGS
 
 data_path = '/Users/blair/ghome/github/blair101/seq2seq_chatbot/new_seq2seq_chatbot/data/dataset-cornell-length10-filter1-vocabSize40000.pkl'
+
 word2id, id2word, trainingSamples = loadDataset(data_path)
+
+# word2id is :  { 'decorations': 12002, 'scraps': 4599, ...}
+#
+# id2word is :  { 0: '<pad>', 1: '<go>', 2: '<eos>', 3: '<unknown>', 4: 'can', 5: 'we', 6: 'make', ... }
+#
+# trainingSamples is :
+#  [
+#     [ [793, 138, 65], [35, 209, 110, 9016, 208, 382, 35, 22] ],
+#     [ [35, 209, 110, 9016, 208, 382, 35, 22], [26, 92, 1906, 47, 254, 65] ],
+#     ...
+#  ]
 
 with tf.Session() as sess:
 
@@ -35,17 +48,24 @@ with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
 
     current_step = 0
+
+    # 將視覺化輸出
     summary_writer = tf.summary.FileWriter(FLAGS.model_dir, graph=sess.graph)
 
     for e in range(FLAGS.numEpochs):
         print("----- Epoch {}/{} -----".format(e + 1, FLAGS.numEpochs))
         batches = getBatches(trainingSamples, FLAGS.batch_size)
+
         for nextBatch in tqdm(batches, desc="Training"):
+
             loss, summary = model.train(sess, nextBatch)
             current_step += 1
+
             if current_step % FLAGS.steps_per_checkpoint == 0:
                 perplexity = math.exp(float(loss)) if loss < 300 else float('inf')
                 tqdm.write("----- Step %d -- Loss %.2f -- Perplexity %.2f" % (current_step, loss, perplexity))
+
                 summary_writer.add_summary(summary, current_step)
+
                 checkpoint_path = os.path.join(FLAGS.model_dir, FLAGS.model_name)
                 model.saver.save(sess, checkpoint_path, global_step=current_step)
