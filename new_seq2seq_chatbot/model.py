@@ -215,7 +215,7 @@ class Seq2SeqModel():
         return loss, summary
 
     def eval(self, sess, batch):
-        # 对于eval阶段，不需要反向传播，所以只执行self.loss, self.summary_op两个op，并传入相应的数据
+        # 对于eval阶段，不需要反向传播，所以只执行 self.loss, self.summary_op 两个op，并传入相应的数据
         feed_dict = {self.encoder_inputs: batch.encoder_inputs,
                      self.encoder_inputs_length: batch.encoder_inputs_length,
                      self.decoder_targets: batch.decoder_targets,

@@ -45,9 +45,11 @@ with tf.Session() as sess:
         model.saver.restore(sess, ckpt.model_checkpoint_path)
     else:
         raise ValueError('No such file:[{}]'.format(FLAGS.model_dir))
+
     sys.stdout.write("> ")
     sys.stdout.flush()
     sentence = sys.stdin.readline()
+
     while sentence:
         batch = sentence2enco(sentence, word2id)
         predicted_ids = model.infer(sess, batch)

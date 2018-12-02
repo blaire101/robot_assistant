@@ -37,18 +37,18 @@
 [bot1]: /2018/11/15/ops/ops-common-links-for-chatbot/
 
 [0]: /chatbot
-[b1]: /2017/08/11/chatbot/chatbot-research1/
-[b2]: /2017/08/12/chatbot/chatbot-research2/
-[b3]: /2017/08/13/chatbot/chatbot-research3/
-[b4]: /2017/08/14/chatbot/chatbot-research4/
-[b5]: /2017/08/15/chatbot/chatbot-research5/
-[b6]: /2017/08/16/chatbot/chatbot-research6/
-[b7]: /2017/09/26/chatbot/chatbot-research7/
-[b8]: /2017/11/17/chatbot/chatbot-research8/
-[b9]:/2017/11/19/chatbot/chatbot-research9/
-[b10]: /2017/11/26/chatbot/chatbot-research10/
-[b11]: /2018/11/29/chatbot/chatbot-research11/
-[b12]: /2018/12/01/chatbot/chatbot-research12/
+[b1]: http://www.iequa.com/2017/08/11/chatbot/chatbot-research1/
+[b2]: http://www.iequa.com/2017/08/12/chatbot/chatbot-research2/
+[b3]: http://www.iequa.com/2017/08/13/chatbot/chatbot-research3/
+[b4]: http://www.iequa.com/2017/08/14/chatbot/chatbot-research4/
+[b5]: http://www.iequa.com/2017/08/15/chatbot/chatbot-research5/
+[b6]: http://www.iequa.com/2017/08/16/chatbot/chatbot-research6/
+[b7]: http://www.iequa.com/2017/09/26/chatbot/chatbot-research7/
+[b8]: http://www.iequa.com/2017/11/17/chatbot/chatbot-research8/
+[b9]:http://www.iequa.com/2017/11/19/chatbot/chatbot-research9/
+[b10]: http://www.iequa.com/2017/11/26/chatbot/chatbot-research10/
+[b11]: http://www.iequa.com/2018/11/29/chatbot/chatbot-research11/
+[b12]: http://www.iequa.com/2018/12/01/chatbot/chatbot-research12/
 
 
 ### Github
