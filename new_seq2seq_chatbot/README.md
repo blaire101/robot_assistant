@@ -5,4 +5,4 @@
 ### 数据集
 
 - 英文 : Cornell Movie Dialogs
-- 中文 : 小黄鸭
+- 中文 : 小黄鸡 xiaohuangji50w_nofenci.conv  908264 dialog
