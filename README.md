@@ -28,9 +28,9 @@
 
 - [Chatbot Research 12 - 理论篇： 评价指标介绍][b12]
 
-- [Chatbot Research 13 - 理论篇： MMI 模型理论][0]
+- [Chatbot Research 13 - 理论篇： MMI 模型理论][b13]
 
-- [Chatbot Research 14 - 理论篇： DST 多轮对话理论][0]
+- [Chatbot Research 14 - 理论篇： DST 多轮对话理论 (not finish)][0]
 
 - [Chatbot Useful Links][bot1]
 
@@ -49,6 +49,7 @@
 [b10]: http://www.iequa.com/2017/11/26/chatbot/chatbot-research10/
 [b11]: http://www.iequa.com/2018/11/29/chatbot/chatbot-research11/
 [b12]: http://www.iequa.com/2018/12/01/chatbot/chatbot-research12/
+[b13]: http://www.iequa.com/2018/12/05/chatbot/chatbot-research13/
 
 
 ### Github
