@@ -132,9 +132,16 @@ class Seq2SeqModel():
                 # 调用dynamic_decode进行解码，decoder_outputs是一个namedtuple，里面包含两项(rnn_outputs, sample_id)
                 # rnn_output: [batch_size, decoder_targets_length, vocab_size]，保存decode每个时刻每个单词的概率，可以用来计算loss
                 # sample_id: [batch_size], tf.int32，保存最终的编码结果。可以表示最后的答案
+                
                 decoder_outputs, _, _ = tf.contrib.seq2seq.dynamic_decode(decoder=training_decoder,
                                                                           impute_finished=True,
                                                                           maximum_iterations=self.max_target_sequence_length)
+                # decoder: BasicDecoder、BeamSearchDecoder或者自己定义的decoder类对象
+                # impute_finished=True 为真时会拷贝最后一个时刻的状态并将输出置零，程序运行更稳定
+                # maximum_iterations: 最大解码步数，一般训练设置为max_decoder_inputs_length，预测时设置一个想要的最大序列长度即可。程序会在产生<eos>或者到达最大步数处停止。
+                
+                # 其实简单来讲 dynamic_decode 就是先执行decoder的初始化函数，对解码时刻的state等变量进行初始化，然后循环执行decoder的step函数进行多轮解码。
+                
                 # 根据输出计算loss和梯度，并定义进行更新的AdamOptimizer和train_op
                 self.decoder_logits_train = tf.identity(decoder_outputs.rnn_output)
                 self.decoder_predict_train = tf.argmax(self.decoder_logits_train, axis=-1, name='decoder_pred_train')
