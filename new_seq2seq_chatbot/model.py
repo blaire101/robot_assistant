@@ -74,8 +74,13 @@ class Seq2SeqModel():
             embedding = tf.get_variable('embedding', [self.vocab_size, self.embedding_size])
             encoder_inputs_embedded = tf.nn.embedding_lookup(embedding, self.encoder_inputs)
             # 使用dynamic_rnn构建LSTM模型，将输入编码成隐层向量。
-            # encoder_outputs 用于 attention，batch_size*encoder_inputs_length*rnn_size,
+            # encoder_outputs 用于 attention，batch_size*encoder_inputs_length*rnn_size
             # encoder_state   用于 decoder 的初始化状态，batch_size*rnn_szie
+            
+            # tf.nn.dynamic_rnn 返回值：元组（outputs, states）
+            #
+            # 1. outputs：outputs很容易理解，就是每个cell会有一个输出
+            # 2. states：states表示最终的状态，也就是序列中最后一个cell输出的状态
             encoder_outputs, encoder_state = tf.nn.dynamic_rnn(encoder_cell, encoder_inputs_embedded,
                                                                sequence_length=self.encoder_inputs_length,
                                                                dtype=tf.float32)
