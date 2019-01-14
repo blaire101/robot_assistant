@@ -81,6 +81,7 @@ class Seq2SeqModel():
             #
             # 1. outputs：outputs很容易理解，就是每个cell会有一个输出
             # 2. states：states表示最终的状态，也就是序列中最后一个cell输出的状态
+            #     但当输入的cell为BasicLSTMCell时，state的形状为[2，batch_size, cell.output_size ]，其中2也对应着LSTM中的cell state和hidden state。
             encoder_outputs, encoder_state = tf.nn.dynamic_rnn(encoder_cell, encoder_inputs_embedded,
                                                                sequence_length=self.encoder_inputs_length,
                                                                dtype=tf.float32)
