@@ -47,7 +47,7 @@
 [b8]: http://www.iequa.com/2017/11/17/chatbot/chatbot-research8/
 [b9]:http://www.iequa.com/2017/11/19/chatbot/chatbot-research9/
 [b10]: http://www.iequa.com/2017/11/26/chatbot/chatbot-research10/
-[b11]: http://www.iequa.com/2018/11/29/chatbot/chatbot-research11/
+[b11]: http://www.iequa.com/2017/11/29/chatbot/chatbot-research11/
 [b12]: http://www.iequa.com/2018/12/01/chatbot/chatbot-research12/
 [b13]: http://www.iequa.com/2018/12/05/chatbot/chatbot-research13/
 
