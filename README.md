@@ -28,15 +28,15 @@
 
 - [Chatbot Research 12 - 理论篇： 评价指标介绍][b12]
 
-- [Chatbot Research 13 - 理论篇： MMI 模型理论][0]
+- [Chatbot Research 13 - 理论篇： MMI 模型理论][b13]
 
-- [Chatbot Research 14 - 理论篇： DST 多轮对话理论][0]
+- [Chatbot Research 14 - 理论篇： DST 多轮对话理论 (not finish)][0]
 
 - [Chatbot Useful Links][bot1]
 
-[bot1]: /2018/11/15/ops/ops-common-links-for-chatbot/
+[bot1]: http://www.sggo.me/2018/11/15/ops/ops-common-links-for-chatbot/
 
-[0]: /chatbot
+
 [b1]: http://www.sggo.me/2017/08/11/chatbot/chatbot-research1/
 [b2]: http://www.sggo.me/2017/08/12/chatbot/chatbot-research2/
 [b3]: http://www.sggo.me/2017/08/13/chatbot/chatbot-research3/
@@ -45,10 +45,11 @@
 [b6]: http://www.sggo.me/2017/08/16/chatbot/chatbot-research6/
 [b7]: http://www.sggo.me/2017/09/26/chatbot/chatbot-research7/
 [b8]: http://www.sggo.me/2017/11/17/chatbot/chatbot-research8/
-[b9]:http://www.sggo.me/2017/11/19/chatbot/chatbot-research9/
+[b9]: http://www.sggo.me/2017/11/19/chatbot/chatbot-research9/
 [b10]: http://www.sggo.me/2017/11/26/chatbot/chatbot-research10/
 [b11]: http://www.sggo.me/2018/11/29/chatbot/chatbot-research11/
 [b12]: http://www.sggo.me/2018/12/01/chatbot/chatbot-research12/
+[b13]: http://www.sggo.me/2018/12/05/chatbot/chatbot-research13/
 
 
 ### Github
