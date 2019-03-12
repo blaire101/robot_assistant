@@ -6,42 +6,6 @@
 
 > nltk.tokenize.punkt 中包含了很多预先训练好的 tokenize模型
 
-## 测试效果
-
-根据用户输入回复概率最大的前beam_size个句子：
-
-```bash
-> hello
-Replies --------------------------------------->
-hello .
-hi .
->  
-how are you
-Replies --------------------------------------->
-fine .
->  
-how old are you
-Replies --------------------------------------->
-thirty-five .
->  
-hehe
-Replies --------------------------------------->
-yes .
-what ?
->  
-how are you
-Replies --------------------------------------->
-fine .
->  
-what's your name?
-Replies --------------------------------------->
-javier rodriguez .
-pinkus .
-laura .
-joad .
->  
-```
-
 ## 使用方法
 
 1. 载代码到本地（data文件夹下已经包含了处理好的数据集 159657 QA，所以无需额外下载数据集）
