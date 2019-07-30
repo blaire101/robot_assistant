@@ -28,22 +28,22 @@
 
 - [Chatbot Useful Links][bot1]
 
-[0]: /2018/12/06/chatbot/chatbot-index/#1-Chatbot
-[b1]: /2017/08/11/chatbot/chatbot-research1/
-[b2]: /2017/08/12/chatbot/chatbot-research2/
-[b3]: /2017/08/13/chatbot/chatbot-research3/
-[b4]: /2017/08/14/chatbot/chatbot-research4/
-[b5]: /2017/08/15/chatbot/chatbot-research5/
-[b6]: /2017/08/16/chatbot/chatbot-research6/
-[b7]: /2017/09/26/chatbot/chatbot-research7/
-[b8]: /2017/11/17/chatbot/chatbot-research8/
-[b9]:/2017/11/19/chatbot/chatbot-research9/
-[b10]: /2017/11/26/chatbot/chatbot-research10/
-[b11]: /2017/11/29/chatbot/chatbot-research11/
-[b12]: /2018/12/01/chatbot/chatbot-research12/
-[b13]: /2018/12/05/chatbot/chatbot-research13/
+[0]: http://52binge.github.io/2018/12/06/chatbot/chatbot-index/#1-Chatbot
+[b1]: http://52binge.github.io/2017/08/11/chatbot/chatbot-research1/
+[b2]: http://52binge.github.io/2017/08/12/chatbot/chatbot-research2/
+[b3]: http://52binge.github.io/2017/08/13/chatbot/chatbot-research3/
+[b4]: http://52binge.github.io/2017/08/14/chatbot/chatbot-research4/
+[b5]: http://52binge.github.io/2017/08/15/chatbot/chatbot-research5/
+[b6]: http://52binge.github.io/2017/08/16/chatbot/chatbot-research6/
+[b7]: http://52binge.github.io/2017/09/26/chatbot/chatbot-research7/
+[b8]: http://52binge.github.io/2017/11/17/chatbot/chatbot-research8/
+[b9]: http://52binge.github.io/2017/11/19/chatbot/chatbot-research9/
+[b10]: http://52binge.github.io/2017/11/26/chatbot/chatbot-research10/
+[b11]: http://52binge.github.io/2017/11/29/chatbot/chatbot-research11/
+[b12]: http://52binge.github.io/2018/12/01/chatbot/chatbot-research12/
+[b13]: http://52binge.github.io/2018/12/05/chatbot/chatbot-research13/
 
-[com]: /2017/10/14/ops/ops-common-links/
+[com]: http://52binge.github.io/2017/10/14/ops/ops-common-links/
 
 ### Github
 
