@@ -20,37 +20,30 @@
 
 - [Chatbot Research 8 - 理论 seq2seq+Attention 机制模型详解][b8]
 
-- [Chatbot Research 9 - 旧版 tf.contrib.legacy_seq2seq API 介绍][b9]
-
-- [Chatbot Research 10 - 第一个版本 (简单实现)][b10]
-
 - [Chatbot Research 11 - 第二个版本 (新版实现)][b11]
 
 - [Chatbot Research 12 - 理论篇： 评价指标介绍][b12]
 
 - [Chatbot Research 13 - 理论篇： MMI 模型理论][b13]
 
-- [Chatbot Research 14 - 理论篇： DST 多轮对话理论 (not finish)][0]
-
 - [Chatbot Useful Links][bot1]
 
-[bot1]: http://www.shopee.ai/2018/11/15/ops/ops-common-links-for-chatbot/
+[0]: /2018/12/06/chatbot/chatbot-index/#1-Chatbot
+[b1]: /2017/08/11/chatbot/chatbot-research1/
+[b2]: /2017/08/12/chatbot/chatbot-research2/
+[b3]: /2017/08/13/chatbot/chatbot-research3/
+[b4]: /2017/08/14/chatbot/chatbot-research4/
+[b5]: /2017/08/15/chatbot/chatbot-research5/
+[b6]: /2017/08/16/chatbot/chatbot-research6/
+[b7]: /2017/09/26/chatbot/chatbot-research7/
+[b8]: /2017/11/17/chatbot/chatbot-research8/
+[b9]:/2017/11/19/chatbot/chatbot-research9/
+[b10]: /2017/11/26/chatbot/chatbot-research10/
+[b11]: /2017/11/29/chatbot/chatbot-research11/
+[b12]: /2018/12/01/chatbot/chatbot-research12/
+[b13]: /2018/12/05/chatbot/chatbot-research13/
 
-
-[b1]: http://www.shopee.ai/2017/08/11/chatbot/chatbot-research1/
-[b2]: http://www.shopee.ai/2017/08/12/chatbot/chatbot-research2/
-[b3]: http://www.shopee.ai/2017/08/13/chatbot/chatbot-research3/
-[b4]: http://www.shopee.ai/2017/08/14/chatbot/chatbot-research4/
-[b5]: http://www.shopee.ai/2017/08/15/chatbot/chatbot-research5/
-[b6]: http://www.shopee.ai/2017/08/16/chatbot/chatbot-research6/
-[b7]: http://www.shopee.ai/2017/09/26/chatbot/chatbot-research7/
-[b8]: http://www.shopee.ai/2017/11/17/chatbot/chatbot-research8/
-[b9]: http://www.shopee.ai/2017/11/19/chatbot/chatbot-research9/
-[b10]: http://www.shopee.ai/2017/11/26/chatbot/chatbot-research10/
-[b11]: http://www.shopee.ai/2018/11/29/chatbot/chatbot-research11/
-[b12]: http://www.shopee.ai/2018/12/01/chatbot/chatbot-research12/
-[b13]: http://www.shopee.ai/2018/12/05/chatbot/chatbot-research13/
-
+[com]: /2017/10/14/ops/ops-common-links/
 
 ### Github
 
