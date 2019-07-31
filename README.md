@@ -73,7 +73,7 @@
 
 - [1.11 Attention机制][0]
 
-[0]: https://github.com/blair101/seq2seq_chatbot/
+[0]: http://52binge.github.io
 
 ## 2. TensorFlow
 
