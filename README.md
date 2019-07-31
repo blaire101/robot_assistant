@@ -26,7 +26,7 @@
 
 - [Chatbot Research 13 - 理论篇： MMI 模型理论][b13]
 
-- [Chatbot Useful Links][bot1]
+- [Chatbot Useful Links][com]
 
 [0]: http://52binge.github.io/2018/12/06/chatbot/chatbot-index/#1-Chatbot
 [b1]: http://52binge.github.io/2017/08/11/chatbot/chatbot-research1/
@@ -43,7 +43,7 @@
 [b12]: http://52binge.github.io/2018/12/01/chatbot/chatbot-research12/
 [b13]: http://52binge.github.io/2018/12/05/chatbot/chatbot-research13/
 
-[com]: http://52binge.github.io/2017/10/14/ops/ops-common-links/
+[com]: http://52binge.github.io/2018/12/01/chatbot/chatbot-common-links/
 
 ### Github
 
