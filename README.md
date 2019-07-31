@@ -90,8 +90,8 @@ TensorFlow 用于机器学习和神经网络方面的研究，采用**数据流�
 
 - [1.2 TensorFlow 快速学习 & 文档][t2]  
 
-[t1]: /2017/08/22/tensorflow/tf-1.1-why/
-[t2]: /2017/10/23/tensorflow/tf-doc/
+[t1]: http://52binge.github.io/2017/08/22/tensorflow/tf-1.1-why/
+[t2]: http://52binge.github.io/2017/10/23/tensorflow/tf-doc/
 
 ### 2.2 Tensorflow 基础构架
 
@@ -111,14 +111,14 @@ TensorFlow 用于机器学习和神经网络方面的研究，采用**数据流�
 
 - [2.8 TensorFlow 基本用法总结 🌰🌰🌰][t2.8]
 
-[t2.1]: /2017/08/25/tensorflow/tf-2.1-structure/
-[t2.2]: /2017/08/27/tensorflow/tf-2.2-example/
-[t2.3]: /2017/08/28/tensorflow/tf-2.3-session/
-[t2.4]: /2017/08/29/tensorflow/tf-2.4-variable/
-[t2.5]: /2017/08/30/tensorflow/tf-2.5-placeholde/
-[t2.6]: /2017/09/07/tensorflow/tf-2.6-A-activation-function/
-[t2.7]: /2017/09/07/tensorflow/tf-2.6-B-activation-function/
-[t2.8]: /2017/09/08/tensorflow/tf-2.8-tensorflow-basic-summary/
+[t2.1]: http://52binge.github.io/2017/08/25/tensorflow/tf-2.1-structure/
+[t2.2]: http://52binge.github.io/2017/08/27/tensorflow/tf-2.2-example/
+[t2.3]: http://52binge.github.io/2017/08/28/tensorflow/tf-2.3-session/
+[t2.4]: http://52binge.github.io/2017/08/29/tensorflow/tf-2.4-variable/
+[t2.5]: http://52binge.github.io/2017/08/30/tensorflow/tf-2.5-placeholde/
+[t2.6]: http://52binge.github.io/2017/09/07/tensorflow/tf-2.6-A-activation-function/
+[t2.7]: http://52binge.github.io/2017/09/07/tensorflow/tf-2.6-B-activation-function/
+[t2.8]: http://52binge.github.io/2017/09/08/tensorflow/tf-2.8-tensorflow-basic-summary/
 
 ### 2.3 建造我们第一个神经网络
 
@@ -128,15 +128,15 @@ TensorFlow 用于机器学习和神经网络方面的研究，采用**数据流�
 
 - [3.3 Speed Up Training & Optimizer (转载自莫烦)][t3.3]
 
-[t3.1]: /2017/09/09/tensorflow/tf-3.1-add-layer/
-[t3.2]: /2017/09/11/tensorflow/tf-3.2-create-NN/
-[t3.3]: /2017/09/12/tensorflow/tf-3.3-A-speed-up-learning/
+[t3.1]: http://52binge.github.io/2017/09/09/tensorflow/tf-3.1-add-layer/
+[t3.2]: http://52binge.github.io/2017/09/11/tensorflow/tf-3.2-create-NN/
+[t3.3]: http://52binge.github.io/2017/09/12/tensorflow/tf-3.3-A-speed-up-learning/
 
 ### 2.4 Tensorboard
 
 - [4.1 Tensorboard 可视化好帮手 1][t4.1]
 
-[t4.1]: /2017/09/12/tensorflow/tf-4.1-tensorboard1/
+[t4.1]: http://52binge.github.io/2017/09/12/tensorflow/tf-4.1-tensorboard1/
 
 ### 2.5 Estimator
 
@@ -150,10 +150,10 @@ TensorFlow 用于机器学习和神经网络方面的研究，采用**数据流�
 
 - [5.5 TF 保存和加载模型 - 简书][t5.5]
 
-[t5.1]: /2018/10/31/tensorflow/tf-5.1-contrib-learn-Quickstart/
-[t5.2]: /2018/11/01/tensorflow/tf-5.2-contrib-learn-Input-fn/
-[t5.3]: /2018/11/04/tensorflow/tf-5.3-contrib-learn-MonitorAPI/
-[t5.4]: /2018/11/04/tensorflow/tf-5.4-contrib-learn-Estimator/
+[t5.1]: http://52binge.github.io/2018/10/31/tensorflow/tf-5.1-contrib-learn-Quickstart/
+[t5.2]: http://52binge.github.io/2018/11/01/tensorflow/tf-5.2-contrib-learn-Input-fn/
+[t5.3]: http://52binge.github.io/2018/11/04/tensorflow/tf-5.3-contrib-learn-MonitorAPI/
+[t5.4]: http://52binge.github.io/2018/11/04/tensorflow/tf-5.4-contrib-learn-Estimator/
 [t5.5]: https://www.jianshu.com/p/8850127ed25d
 
 ### 2.6 Language model 介绍 
@@ -166,8 +166,8 @@ TensorFlow 用于机器学习和神经网络方面的研究，采用**数据流�
 
 - [1.3 Language model 介绍 / 评价方法 perplexity (not finish)][0]
 
-[8.1]: /2018/11/08/tensorflow/tf-google-8-rnn-1/
-[8.2]: /2018/11/10/tensorflow/tf-google-8-rnn-2/
+[8.1]: http://52binge.github.io/2018/11/08/tensorflow/tf-google-8-rnn-1/
+[8.2]: http://52binge.github.io/2018/11/10/tensorflow/tf-google-8-rnn-2/
 
 ### 2.7 NNLM (神经语言模型)
 
@@ -175,8 +175,8 @@ TensorFlow 用于机器学习和神经网络方面的研究，采用**数据流�
 
 - [2.3 RNN 的语言模型 TensorFlow 实现][9.2.3]
 
-[9.2.2]: /2018/10/01/tensorflow/tf-nlp-9.2.2/
-[9.2.3]: /2018/10/02/tensorflow/tf-nlp-9.2.3/
+[9.2.2]: http://52binge.github.io/2018/10/01/tensorflow/tf-nlp-9.2.2/
+[9.2.3]: http://52binge.github.io/2018/10/02/tensorflow/tf-nlp-9.2.3/
 
 ### 2.8 MNIST 数字识别问题
 
@@ -186,9 +186,9 @@ TensorFlow 用于机器学习和神经网络方面的研究，采用**数据流�
 
 - [3.4 多层 LSTM 通俗易懂版][minst4]
 
-[minst1]: /2018/10/04/tensorflow/tf-mnist-1-beginners/
-[minst3]: /2017/10/05/tensorflow/tf-4.3-name-variable_scope/
-[minst4]: /2017/10/07/tensorflow/tf-simple-lstms/
+[minst1]: http://52binge.github.io/2018/10/04/tensorflow/tf-mnist-1-beginners/
+[minst3]: http://52binge.github.io/2017/10/05/tensorflow/tf-4.3-name-variable_scope/
+[minst4]: http://52binge.github.io/2017/10/07/tensorflow/tf-simple-lstms/
 
 ## 4. Python
 
@@ -196,11 +196,11 @@ Python 哲学就是简单优雅，尽量写容易看明白的代码，尽量写�
 
 Python 数据分析模块: Numpy & Pandas, 及强大的画图工具 Matplotlib
 
-- [Python](/python_language)
+- [Python](http://52binge.github.io/python_language)
 
-- [Numpy & Pandas](/python_numpy_pandas)
+- [Numpy & Pandas](http://52binge.github.io/python_numpy_pandas)
 
-- [Matplotlib](/python_matplotlib)
+- [Matplotlib](http://52binge.github.io/python_matplotlib)
 
 ## 5. Scikit-Learn
 
@@ -224,13 +224,13 @@ Sklearn 机器学习领域当中最知名的 Python 模块之一 [why][sklearn0]
 
 - [1.9 : Sklearn Save Model][sklearn9]
 
-[sklearn0]: /2018/01/03/python/py-sklearn-0-why/
-[sklearn1]: /2018/01/03/python/py-sklearn-1-choosing-estimator/
-[sklearn2]: /2018/01/05/python/py-sklearn-2-general-learning-model/
-[sklearn3]: /2018/01/03/python/py-sklearn-3-database/
-[sklearn4]: /2018/01/05/python/py-sklearn-4-common-attributes/
-[sklearn5]: /2018/01/06/python/py-sklearn-5-normalization/
-[sklearn6]: /2018/01/08/python/py-sklearn-6-cross-validation-1/
-[sklearn7]: /2018/01/09/python/py-sklearn-6-cross-validation-2/
-[sklearn8]: /2018/01/09/python/py-sklearn-6-cross-validation-3/
-[sklearn9]: /2018/01/10/python/py-sklearn-7-save-model/
+[sklearn0]: http://52binge.github.io/2018/01/03/python/py-sklearn-0-why/
+[sklearn1]: http://52binge.github.io/2018/01/03/python/py-sklearn-1-choosing-estimator/
+[sklearn2]: http://52binge.github.io/2018/01/05/python/py-sklearn-2-general-learning-model/
+[sklearn3]: http://52binge.github.io/2018/01/03/python/py-sklearn-3-database/
+[sklearn4]: http://52binge.github.io/2018/01/05/python/py-sklearn-4-common-attributes/
+[sklearn5]: http://52binge.github.io/2018/01/06/python/py-sklearn-5-normalization/
+[sklearn6]: http://52binge.github.io/2018/01/08/python/py-sklearn-6-cross-validation-1/
+[sklearn7]: http://52binge.github.io/2018/01/09/python/py-sklearn-6-cross-validation-2/
+[sklearn8]: http://52binge.github.io/2018/01/09/python/py-sklearn-6-cross-validation-3/
+[sklearn9]: http://52binge.github.io/2018/01/10/python/py-sklearn-7-save-model/
