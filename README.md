@@ -53,8 +53,10 @@
 1. 图灵机器人(tuling123)
 2. 基于深度学习的seq2seq模型
 
-> 一期: tuling 123
-> 二期: seq2seq
+No. | Title | Desc
+--- | --- | ---
+一期 | tuling 123 | 图灵机器人(tuling123)
+二期 | seq2seq chatbot | 基于深度学习的seq2seq模型
 
 ## 5. 历史数据
 
