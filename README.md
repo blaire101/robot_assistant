@@ -61,9 +61,7 @@
 No. | Title | Desc
 --- | --- | ---
 一期 | tuling 123 | 图灵机器人(tuling123)
-二期 | seq2seq chatbot | 基于深度学习的seq2seq模型
-
-> [new\_seq2seq\_chatbot](https://github.com/blair101/seq2seq_chatbot/tree/master/new_seq2seq_chatbot)
+二期 | [new\_seq2seq\_chatbot](https://github.com/blair101/seq2seq_chatbot/tree/master/new_seq2seq_chatbot) | 基于深度学习的seq2seq模型
 
 ## 5. 历史数据
 
