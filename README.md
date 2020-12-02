@@ -1,6 +1,6 @@
-# "App Get Coupons" Robot Assistant
-
 [美好生活从领券开始 by 庙街/爱客仕](https://appadvice.com/app/e9-a2-86-e5-88-b8/1249324960)
+
+# "App Get Coupons" Robot Assistant
 
 聊天机器人（chatbot），也被称为会话代理，现已成为了一个热门话题。微软在聊天机器人上押上了重注，Facebook（M）、苹果（Siri）、谷歌 和 Slack 等公司也是如此。 新一波创业者们正在尝试改变消费者与服务的交互方式。
 
