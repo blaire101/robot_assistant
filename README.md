@@ -12,7 +12,7 @@
 
 ### 各模块交互关系
 
-![模块交互关系](docs/images/lq-robot-design-5.png)
+![模块交互关系](docs/images/lq-robot-design-2.png)
 
 ## 2. 机器人后端
 
