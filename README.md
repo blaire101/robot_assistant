@@ -58,4 +58,15 @@
 
 ## 5. 历史数据
 
+**数据存储类型**
 
+按照时间目录2017/11/01这样的年/月/日的方式存放，考虑数据存储的大小，选用文本类型.txt
+
+**数据结构设计**
+
+key | user_id | device_id | agent | ip | phone | type | question | answer | longitude_latitude | scene_type | city_code | city_name | district_code | district_name | send_time
+ 
+**数据存储事例**
+
+一条聊天记录写入以“\001”（不可见字符）为分隔，以“\n”换行符划分一条记录存储
+1 | user001 | sn001 | huawei | 192.168.1.184 | 15788900001 | 湖滨银泰有哪些优惠券 | 1 | 1  | [120.164993,30.287061]  | 330100 | 杭州市 |  330104 | 江干区 | 2017-11-01 10:00:00 | 
