@@ -8,7 +8,9 @@
 
 ## 1. 整体架构和流程
 
-> [new\_seq2seq\_chatbot](https://github.com/blair101/seq2seq_chatbot/tree/master/new_seq2seq_chatbot)
+![一期设计](docs/images/lq-robot-design-1.png)
+
+> [new\_seq2seq\_chatbot](new_seq2seq_chatbot)
 
 ### 各模块交互关系
 
