@@ -2,7 +2,7 @@
 
 ## page 1
 
-![home1](lq-page-m1.png)
+![home1](lq-merge-1.jpg)
 
 ## page 2
 
