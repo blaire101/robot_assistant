@@ -10,8 +10,6 @@
 
 ![一期设计](docs/images/lq-robot-design-1.png)
 
-> [new\_seq2seq\_chatbot](new_seq2seq_chatbot)
-
 ### 各模块交互关系
 
 ![模块交互关系](docs/images/lq-robot-design-2.png)
@@ -65,7 +63,7 @@
 No. | Title | Desc
 --- | --- | ---
 一期 | tuling 123 | 图灵机器人(tuling123)
-二期 | [new\_seq2seq\_chatbot](https://github.com/blair101/seq2seq_chatbot/tree/master/new_seq2seq_chatbot) | 基于深度学习的seq2seq模型
+二期 | [new\_seq2seq\_chatbot](new_seq2seq_chatbot) | 基于深度学习的seq2seq模型
 
 ## 5. 历史数据
 
