@@ -63,9 +63,6 @@ No. | Title | Desc
 
 **数据结构设计**
 
-key | user_id | device_id | agent | ip | phone | type | question | answer | longitude_latitude | scene_type | city_code | city_name | district_code | district_name | send_time
- 
-**数据存储事例**
-
-一条聊天记录写入以“\001”（不可见字符）为分隔，以“\n”换行符划分一条记录存储
-1 | user001 | sn001 | huawei | 192.168.1.184 | 15788900001 | 湖滨银泰有哪些优惠券 | 1 | 1  | [120.164993,30.287061]  | 330100 | 杭州市 |  330104 | 江干区 | 2017-11-01 10:00:00 | 
+key | user\_id | device\_id | agent | ip | phone | type | question | answer | longitude\_latitude | scene\_type | city\_code | city\_name | district\_code | district\_name | send\_time
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+1 | user001 | sn001 | huawei | 192.168.1.184 | 15788900001 | | 湖滨银泰有哪些优惠券 | 1 | [120.164993,30.287061] | | 330100 | 杭州市 |  330104 | 江干区 | 2017-11-01 10:00:00 | 
