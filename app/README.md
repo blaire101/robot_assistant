@@ -4,5 +4,5 @@
 
 <br>
 
-![home1](lq-merge-1.jpg)
+![home1](../docs/images/app-lq-merge-1.jpg)
 
