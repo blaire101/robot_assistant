@@ -1,5 +1,5 @@
-![logo1](app_home/lq-home-1.png)
+![home1](lq-home-1.png)
 
-![logo1](app_home/lq-home-2.png)
+![home2](lq-home-2.png)
 
-![logo1](app_home/lq-home-3.png)
+![home3](lq-home-3.png)
