@@ -61,6 +61,15 @@
 
 ### 详细设计图 敏感信息未展示
 
+No. | 模块 | 描述
+--- | --- | ---
+1. | 前端 | App H5/ios/android ...
+2. | 业务系统 | 
+3. | 语言理解 | lexical analysis
+4. | 问答模块 | search content
+5. | 聊天模块 | chatbot model
+6. | 数据分析 | ...
+
 <!--![一期设计](docs/images/lq-robot-design-1.png)
 -->
 
