@@ -55,11 +55,11 @@
 - [Chatbot-tube](https://github.com/chatbot-tube)
 </details>
 
-# 技术方案详细设计一期
+# 技术方案设计一期
 
 ## 1. 整体架构和流程
 
-**一期设计图 敏感信息未展示**
+### 一期设计图 敏感信息未展示
 
 <!--![一期设计](docs/images/lq-robot-design-1.png)
 -->
