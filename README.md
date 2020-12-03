@@ -61,10 +61,12 @@
 
 ### 详细设计图未授权展示
 
+<br>
+
 No. | 模块 | 描述
 :---: | :---: | ---
 1 | 前端 | App H5/ios/android ...
-2 | 业务系统 | 账号系统,语音识别与合成..
+2 | 业务系统 | account, speech recognition and synthesis
 3 | 语言理解 | lexical analysis
 4 | 问答模块 | search content
 5 | 聊天模块 | chatbot model
