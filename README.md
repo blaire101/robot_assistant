@@ -55,7 +55,7 @@
 - [Chatbot-tube](https://github.com/chatbot-tube)
 </details>
 
-## Tech Solution demo
+## 技术方案 demo
 
 ## 1. 整体架构和流程
 
