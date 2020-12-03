@@ -55,14 +55,14 @@
 - [Chatbot-tube](https://github.com/chatbot-tube)
 </details>
 
-# 技术方案设计一期
+# 技术方案设计一期 demo
 
 ## 1. 整体架构和流程
 
 ### 详细设计图 敏感信息未展示
 
 No. | 模块 | 描述
---- | --- | ---
+----- | ----- | -----
 1. | 前端 | App H5/ios/android ...
 2. | 业务系统 | 账号系统,语音识别与合成..
 3. | 语言理解 | lexical analysis
