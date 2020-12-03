@@ -64,11 +64,11 @@
 No. | 模块 | 描述
 --- | --- | ---
 1. | 前端 | App H5/ios/android ...
-2. | 业务系统 | 
+2. | 业务系统 | 账号系统,语音识别与合成..
 3. | 语言理解 | lexical analysis
 4. | 问答模块 | search content
 5. | 聊天模块 | chatbot model
-6. | 数据分析 | ...
+6. | 数据分析 | history data
 
 <!--![一期设计](docs/images/lq-robot-design-1.png)
 -->
