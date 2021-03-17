@@ -72,7 +72,9 @@ No. | 模块 | 描述
 5 | 聊天模块 | chatbot model
 6 | 数据分析 | history data
 
-![一期设计](docs/images/lq-robot-design-1.png)
+<img src="docs/images/lq-robot-design-1.png" width="650" alt="一期设计" />
+
+<!-- ![一期设计](docs/images/lq-robot-design-1.png) -->
 
 ### 各模块交互关系
 
